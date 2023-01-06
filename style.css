@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@100;200;300;400&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(233, 47%, 7%);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: hsl(244, 38%, 16%);
+    width: 80%;
+    border-radius: 10px;
+    color: aliceblue;
+    overflow: hidden;
+}
+.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(277, 64%, 61%);
+}
+.picture img{
+    max-width: fit-content;
+    object-fit: cover;
+    opacity: .8;
+    mix-blend-mode: multiply;
+}
+img, picture{
+    max-width: 100%;
+    display: block;
+    line-height: 0;
+}
+.text{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 70px;
+}
+.mainTitle{
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    max-width: 80%;
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 100%);
+}
+.subTitle{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    max-width: 80%;
+    font-weight: 200;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 15%;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+.stats{
+    display: flex;
+    flex-flow: row wrap;
+    gap: .5rem 3.5rem;
+}
+.statsNumber{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 13%;
+    letter-spacing: .05rem;
+    color: hsl(0, 0%, 100%);
+}
+.statsName{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    padding-top: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media screen and (max-width: 1039px){
+    main{
+        max-height: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: hsl(244, 38%, 16%);
+        width: 80%;
+        border-radius: 10px;
+        color: aliceblue;
+        overflow: hidden;
+        padding-bottom: 3.5%;
+    }
+    .picture{
+        display: inline-table;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(277, 64%, 61%);
+    }
+    .picture img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .8;
+        mix-blend-mode: multiply;
+    }
+    img, picture{
+        min-height: 100%;
+        display: block;
+        line-height: 0;
+    }
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .mainTitle{
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        max-width: 80%;
+        margin-bottom: 0px;
+        color: hsl(0, 0%, 100%);
+    }
+    .subTitle{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        max-width: 85%;
+        font-weight: 200;
+        line-height: 25px;
+        color: hsla(0, 0%, 100%, 0.75);
+        text-align: center;
+    }
+    .stats{
+        display: flex;
+        flex-flow: column wrap;
+        gap: .1rem 3.5rem;
+        margin-bottom: 10%;
+    }
+    .statsNumber{
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        letter-spacing: .05rem;
+        color: hsl(0, 0%, 100%);
+        text-align: center;
+    }
+    .statsName{
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+        letter-spacing: .1rem;
+        padding-top: 0;
+        margin-top: 5px;
+        text-transform: uppercase;
+        color: hsla(0, 0%, 100%, 0.6);
+        text-align: center;
+    }
+
+}
